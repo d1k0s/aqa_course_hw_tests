@@ -10,8 +10,6 @@
 const salary = 1000;
 let grade;
 
-
-
 salary >= 1000 ? grade = "middle" : grade = "junior";
 
 console.log(grade);
