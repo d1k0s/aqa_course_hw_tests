@@ -25,9 +25,9 @@
   });
 
   rl.question("Введите возраст: ", (input) => {
-    const age = Number(input);
+    const age = input;
     
-    if (typeof age !== 'number') {
+    if (isNaN(input) || input.trim() === '') {
       console.log("Incorrect data type");
     }
     if (age < minAge) {
@@ -41,3 +41,4 @@
     }
     rl.close();
   })
+
