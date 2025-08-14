@@ -1,4 +1,4 @@
-import { forOf, result, first, second, rest, mergedArray } from '../../../homework-solutions/js/hw-6/task-1';
+import { forOf, result, first, second, rest, mergedArray } from '../../../homework-solutions/js/hw-6/task-1.mjs';
 
 describe('[JS] - [HW 6] - Task 1', () => {
   test('[forOf] array should contain squared even numbers and cubed odd numbers', () => {
