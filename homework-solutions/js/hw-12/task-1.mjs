@@ -17,7 +17,9 @@ function prmiseNumber(n) {
 console.log(prmiseNumber(5))
 
 Promise.all([prmiseNumber(1), prmiseNumber(2), prmiseNumber(3)])
-    .then((values) => console.log(values))
+    .then((values) => {
+        values.forEach((value) => console.log(values))
+    })
     .catch((error) => console.log("Error"))
 
 Promise.allSettled([prmiseNumber(1), prmiseNumber(2), prmiseNumber(3)]).then((values) => {
@@ -33,7 +35,9 @@ Promise.allSettled([prmiseNumber(1), prmiseNumber(2), prmiseNumber(3)]).then((va
 async function handleAllPromises() {
     try {
         const values = await Promise.all([prmiseNumber(1), prmiseNumber(2), prmiseNumber(3)])
-        console.log()
+        values.forEach((result) => {
+            console.log(result)
+        })
     } catch (error) {
         console.log(error)
     }
