@@ -13,11 +13,7 @@ function validatePassword(password: string): boolean {
     const upperCase = /[A-ZА-ЯЁ]/.test(password);
     const lowerCase = /[a-za-яё]/.test(password);
     const digit = /[0-9]/.test(password);
-    if (upperCase && lowerCase && digit && password.length >=9 && password.trim().length !== 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return upperCase && lowerCase && digit && password.length >=9 && password.trim().length !== 0 
 }
 
 console.log(validatePassword("f,dultsdf123313"))
