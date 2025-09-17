@@ -14,7 +14,7 @@ function validatePassword(password) {
     const upperCase = /[A-ZА-ЯЁ]/.test(password);
     const lowerCase = /[a-za-яё]/.test(password);
     const digit = /[0-9]/.test(password);
-    if (upperCase && lowerCase && digit && password.length >= 8 && password.trim().length !== 0) {
+    if (upperCase && lowerCase && digit && password.length >= 9 && password.trim().length !== 0) {
         return true;
     }
     else {
