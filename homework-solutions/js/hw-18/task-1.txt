@@ -1,0 +1,20 @@
+ Xpath/CSS: элемент с id - ‘submit’
+  Xpath/CSS: все элементы с классом ‘txt’ 
+  Xpath: первый элемент с классом ‘txt’
+  Xpath: кнопку которая содержит текст: ‘Remove comment’
+  Xpath: первый элемент с классом ‘one’ 
+  Xpath/CSS: элемент с атрибутом ‘multitag2’ и значением  ‘on’ 
+  Xpath/CSS: всех детей элемента ‘div’ с классом ‘content’ 
+  CSS: все элементы ‘span’ и  ‘button’ с классом ‘content’ 
+  Xpath: используя за основу селектор //*[@id='submit'] найти элемент body 
+
+
+  1. #submit
+  2. .txt
+  3. //span[@class="txt"][1]
+  4. //button[text()="Remove comment"]
+  5. //*[contains(@class, "one")][1]
+  6. //*[@multitag = "on"]
+  7. div .content
+  8. span.content, button.content
+  9. //*[@id='submit']/ancestor::body
